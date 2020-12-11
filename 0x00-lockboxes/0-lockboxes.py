@@ -17,7 +17,7 @@ def canUnlockAll(boxes):
             for key in keys:
                 addKey(key, keyset, boxes)
         if box not in keyset:
-            for nextbox, nextboxkeys in enumerate(boxes[(box + 1):(len(boxes))]):
+            for nextbox, nextboxkeys in enumerate(boxes[(box+1):(len(boxes))]):
                 nextboxindex = 1 + box + nextbox
                 if nextboxindex in keyset:
                     keyset.update(nextboxkeys)
